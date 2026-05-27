@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+# Runtime outputs
+logs/
+state/
+output/
+projects/*/logs/
+projects/*/state/
+projects/*/output/
+
+# Node dependencies for demo JavaScript reverse-engineering cases
+node_modules/
+

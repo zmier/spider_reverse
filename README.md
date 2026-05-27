@@ -74,3 +74,15 @@ For a new website:
 - Keep demo scripts close to their original case context.
 - Keep project outputs out of source control unless they are small sample fixtures.
 - Prefer simple scripts first; add framework abstractions when repetition becomes real.
+
+## Python Environment
+
+Use one root virtual environment for this directory:
+
+```bash
+cd "/Users/narra/Documents/alib/Writer/02 Sources/SMK/0 scripts/spiders"
+python -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+
+The root `requirements.txt` aggregates the Python packages needed by `demo/`, `framework/`, and `projects/`. Individual projects may still keep their own narrower `requirements.txt` for deployment.
