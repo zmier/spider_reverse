@@ -77,12 +77,11 @@ For a new website:
 
 ## Python Environment
 
-Use one root virtual environment for this directory:
+Use the SMK project root virtual environment:
 
 ```bash
-cd "/Users/narra/Documents/alib/Writer/02 Sources/SMK/0 scripts/spiders"
-python -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
+cd "/Users/narra/Documents/alib/Writer/02 Sources/SMK"
+.venv/bin/python -m pip install -e ".[spiders]"
 ```
 
-The root `requirements.txt` aggregates the Python packages needed by `demo/`, `framework/`, and `projects/`. Individual projects may still keep their own narrower `requirements.txt` for deployment.
+The SMK root `pyproject.toml` is the dependency source of truth. `spiders/requirements.txt` is kept as a pip compatibility reference. Individual projects may still keep their own narrower `requirements.txt` for deployment.

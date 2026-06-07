@@ -1,3 +1,6 @@
 [submodule "projects/tgb"]
 	path = projects/tgb
 	url = git@github.com:zmier/taoguba-crawler-skill.git
+[submodule "projects/em"]
+	path = projects/em
+	url = git@github.com:zmier/EastMoneyGuBaCrawler.git
